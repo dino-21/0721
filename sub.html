@@ -1,0 +1,983 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>인터파크도서</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="js/js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/CloseBtn.js"></script>
+    <script src="js/Kategorie.js"></script>
+    <script src="js/FixLogin.js"></script>
+    <script src="js/JsonSubAnotherBook.js"></script>
+    <script src="js/JsonSubAnotherBook2.js"></script>
+    <script src="js/JsonSubAnotherBook3.js"></script>
+    <script src="js/JsonSubAnotherBook4.js"></script>
+    <script src="js/FooterPersonHover.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="loginfixed">
+            <div class="fixloginbox">
+                <h3>LOGIN</h3>
+                <p>반갑습니다.<br />로그인해주세요</p>
+                <button>로그인</button>
+            </div>
+            <div class="bixbox">도서상품권<i class="fas fa-chevron-right"></i></div>
+            <div class="bixbox">북카트<i class="fas fa-caret-up"></i></div>
+            <div class="bixbox">오늘 본 상품 <span>(2)</span><i class="fas fa-caret-up"></i></div>
+            <div class="bixbox"><img src="img/main/fiximg.jpg" alt=""></div>
+            <div class="bixbox">
+                <div id="topBtn"><i class="fas fa-caret-up noab"></i>TOP</div>
+            </div>
+            <div class="nextbox">
+                <span class="prev">&gt;</span>
+                <span class="next">&lt;</span>
+            </div>
+        </div>
+        <div class="intact">
+            <div class="intactleft"><img src="img/main/header1.jpg" alt=""></div>
+            <div class="intactright"><img src="img/main/header2.jpg" alt="">
+                <div class="closeBtn"><img src="img/main/closeBtn.png" alt=""></div>
+            </div>
+        </div>
+        <header>
+            <div id="headerline">
+                <div class="homeloginwrap">
+                    <div class="home">
+                        <ul>
+                            <li><a href="main.html">홈</a></li>
+                            <li><a href="main.html">도서 바로가기</a></li>
+                            <li><a href="sub.html">티켓</a></li>
+                            <li><a href="sub.html">투어</a></li>
+                            <li><a href="sub.html">아이마켓</a></li>
+                        </ul>
+                    </div>
+                    <div class="login">
+                        <ul>
+                            <li><a href="sub.html">로그인</a></li>
+                            <li>|</li>
+                            <li><a href="sub.html">회원가입</a></li>
+                            <li>|</li>
+                            <li><a href="sub.html">마이페이지</a></li>
+                            <li>|</li>
+                            <li><a href="sub.html">고객센터</a></li>
+                            <li>|</li>
+                            <li><a href="sub.html">모바일APP</a></li>
+                            <li>|</li>
+                            <li><a href="sub.html">스마트콘 <span>off</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hlborder">
+                <div class="headerlogo">
+                    <div class="logo"><a href="main.html"><img src="img/main/logo.png" alt=""></a></div>
+                    <div class="searchbarwrap">
+                        <div class="searchbar">
+                            <input type="search" placeholder="'책근육' 을 키워줄 유아동 추천도서">
+                            <div class="searchicon"><i class="fas fa-search"></i></div>
+                        </div>
+                        <div class="searchkeyword">
+                            <ul>
+                                <li><a href="sub.html">대학교재특가</a></li>
+                                <li></li>
+                                <li><a href="sub.html">완벽주의</a></li>
+                                <li></li>
+                                <li><a href="sub.html">입트영 신간</a></li>
+                                <li></li>
+                                <li><a href="sub.html">내신원정대</a></li>
+                                <li></li>
+                                <li><a href="sub.html">2021대수능</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="adbbox"><a href="#"><img src="img/main/adb.png" alt=""></a></div>
+                </div>
+            </div>
+            <div class="navwrap">
+                <nav>
+                    <ul>
+                        <li id="nc">
+                            <i class="fas fa-bars"></i> 전체 카테고리 <i class="fas fa-angle-down" id="down1"></i><i class="fas fa-angle-up" id="up1"></i>
+                        </li>
+                        <li><a href="sub.html">베스트</a></li>
+                        <li><a href="sub.html">미디어</a></li>
+                        <li><a href="sub.html">신간</a></li>
+                        <li><a href="sub.html">이벤트</a></li>
+                        <li>　</li>
+                        <li><a href="sub.html">국내</a></li>
+                        <li><a href="sub.html">외국</a></li>
+                        <li><a href="sub.html">eBook</a></li>
+                        <li><a href="sub.html">중고</a></li>
+                        <li><a href="sub.html">음반</a></li>
+                        <li><a href="sub.html">DVD</a></li>
+                        <li><a href="sub.html">북DB</a></li>
+                    </ul>
+                    <div class="navslide">
+                        <ul>
+                            <li><span>국내도서</span> <i class="fas fa-angle-right"></i><img src="img/main/domesticbook.jpg" alt="">
+                                <ul>
+                                    <li><span>소설</span><span>자격서·수험서</span></li>
+                                    <li><span>장르소설</span><span>공무원·수험서</span></li>
+                                    <li><span>시·에세이</span><span>컴퓨터·인터넷</span></li>
+                                    <li><span>경제경영</span><span>전공·대학교재</span></li>
+                                    <li><span>자기계발</span><span>여행</span></li>
+                                    <li><span>사회과학</span><span>취미레저</span></li>
+                                    <li><span>역사·문화</span><span>건강뷰티</span></li>
+                                    <li><span>예술·대중문화</span><span>잡지</span></li>
+                                    <li><span>인문</span><span>만화라이트노벨</span></li>
+                                    <li><span>자연·과학</span><span>유아동전집</span></li>
+                                    <li><span>종교·역학</span><span class="scolor">예약판매</span></li>
+                                    <li><span>유아</span><span class="scolor">프리미엄북</span></li>
+                                    <li><span>아동</span></li>
+                                    <li><span>가정과생활</span></li>
+                                    <li><span>청소년</span></li>
+                                    <li><span>초등학습</span></li>
+                                    <li><span>중등학습</span></li>
+                                    <li><span>고등학습</span></li>
+                                    <li><span>국어·외국어·사전</span></li>
+                                </ul>
+                            </li>
+                            <li><span>외국도서</span> <i class="fas fa-angle-right"></i>
+                                <ul>
+                                    <li><span>어린이</span></li>
+                                    <li><span>문학</span></li>
+                                    <li><span>ELT·사전</span></li>
+                                    <li><span>일본도서</span></li>
+                                    <li><span>경제·인문</span></li>
+                                    <li><span>실용·예술</span></li>
+                                    <li><span>대학·전문서적</span></li>
+                                    <li><span>컴퓨터</span></li>
+                                    <li><span>해외잡지</span></li>
+                                    <li><span>해외주문원서</span></li>
+                                    <li><span>학습교구/게임</span></li>
+                                    <li><span class="scolor">예약판매</span></li>
+                                    <li><span class="scolor">원서vs번역서</span></li>
+                                </ul>
+                            </li>
+                            <li><span>eBook</span> <i class="fas fa-angle-right"></i>
+                                <ul>
+                                    <li><span>소설</span></li>
+                                    <li><span>장르소설</span></li>
+                                    <li><span>시·에세이</span></li>
+                                    <li><span>경제경영</span></li>
+                                    <li><span>자기계발</span></li>
+                                    <li><span>인문·역사</span></li>
+                                    <li><span>예술·종교</span></li>
+                                    <li><span>자연·사회과학</span></li>
+                                    <li><span>가정·취미·건강</span></li>
+                                    <li><span>초중고학습서</span></li>
+                                    <li><span>어학서·수험서</span></li>
+                                    <li><span>대학교재</span></li>
+                                    <li><span>외국도서</span></li>
+                                    <li><span>만화</span></li>
+                                    <li><span>어린이·청소년</span></li>
+                                    <li><span>잡지</span></li>
+                                    <li><span>성인</span></li>
+                                    <li><span>북씨</span></li>
+                                    <li><span class="scolor">새로나온 eBook</span></li>
+                                    <li><span class="scolor">대여 eBook</span></li>
+                                </ul>
+                            </li>
+                            <li><span>중고</span> <i class="fas fa-angle-right"></i>
+                                <ul>
+                                    <li><span>소설</span></li>
+                                    <li><span>에세이·시</span></li>
+                                    <li><span>경제경영</span></li>
+                                    <li><span>자기계발</span></li>
+                                    <li><span>사회과학</span></li>
+                                    <li><span>역사</span></li>
+                                    <li><span>예술·대중문화</span></li>
+                                    <li><span>인문</span></li>
+                                    <li><span>자연과 과학</span></li>
+                                    <li><span>종교·역학</span></li>
+                                    <li><span>유아</span></li>
+                                    <li><span>아동</span></li>
+                                    <li><span>가정과생활</span></li>
+                                    <li><span>청소년</span></li>
+                                    <li><span>초중고학습서</span></li>
+                                    <li><span>국어·외국어</span></li>
+                                    <li><span>자격서·수험서</span></li>
+                                    <li><span>전공·대학교재</span></li>
+                                    <li><span>외국도서</span></li>
+                                    <li><span>건강·미용</span></li>
+                                    <li><span>만화</span></li>
+                                    <li><span>브랜드전집</span></li>
+                                    <li><span>중고음반</span></li>
+                                    <li><span>중고DVD</span></li>
+                                    <li><span class="scolor">균일가몰</span></li>
+                                    <li><span class="scolor">판매자 로그인</span></li>
+                                </ul>
+                            </li>
+                            <li><span>음반</span> <i class="fas fa-angle-right"></i>
+                                <ul>
+                                    <li><span>가요</span><span>재즈</span></li>
+                                    <li><span>팝</span><span>유아·아동·태교</span></li>
+                                    <li><span>클래식</span><span>뮤직 DVD</span></li>
+                                    <li><span>국악</span><span>O.S.T</span></li>
+                                    <li><span>일본음악</span><span>월드뮤직</span></li>
+                                    <li><span>락</span><span>종교</span></li>
+                                    <li><span>뉴에이지</span><span class="scolor">예약판매</span></li>
+                                    <li><span>해외구매</span><span class="scolor">스타샵</span></li>
+                                    <li><span>수입음반</span><span class="scolor">아티스트파일</span></li>
+                                    <li><span></span><span class="scolor">LP</span></li>
+                                </ul>
+                            </li>
+                            <li><span>DVD</span> <i class="fas fa-angle-right"></i>
+                                <ul>
+                                    <li><span>블루레이</span><span>TV시리즈</span></li>
+                                    <li><span>EBS교육용</span><span>해외구매</span></li>
+                                    <li><span>유아동 DVD</span><span>Blu-ray</span></li>
+                                    <li><span>영화</span><span>애니메이션</span></li>
+                                    <li><span>다큐멘터리</span><span>예약판매</span></li>
+                                    <li><span>건강·취미·스포츠</span></li>
+
+                                </ul>
+                            </li>
+                            <li><span>굿즈#</span> <i class="fas fa-angle-right"></i><img src="img/main/goods.jpg" alt="">
+                                <ul>
+                                    <li><span>문구/팬시</span></li>
+                                    <li><span>사무/학용</span></li>
+                                    <li><span>학습</span></li>
+                                    <li><span>독서용품</span></li>
+
+
+                                </ul>
+                            </li>
+                        </ul>
+                        <span>X</span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class="productwrap">
+                <div class="essay">
+                    <ul>
+                        <li>홈 <i class="fas fa-caret-down"></i></li>
+                        <li><i class="fas fa-angle-right"></i></li>
+                        <li>국내도서 <i class="fas fa-caret-down"></i></li>
+                        <li><i class="fas fa-angle-right"></i></li>
+                        <li>시/에세이 <i class="fas fa-caret-down"></i></li>
+                        <li><i class="fas fa-angle-right"></i></li>
+                        <li>에세이/산문 <i class="fas fa-caret-down"></i></li>
+                        <li><i class="fas fa-angle-right"></i></li>
+                        <li>한국에세이 <i class="fas fa-caret-down"></i></li>
+                    </ul>
+                    <div class="srecomend">
+                        <img src="img/sub/recomend.png" alt="">
+                        <div class="stextbox">
+                            <p><span>홀로쓰고, 함께 살다</span> : 조정래, 등단 50주년 기념 독자와의 대화</p>
+                            <span>베스트셀러</span><span>인터파크추천</span>
+                        </div>
+                        <div class="wrap-star">
+                            <div class='star-rating'>
+                                <span style="width:90%"></span>
+                            </div>
+                            <span>9.8</span>
+                            <span>|</span>
+                            <img src="img/sub/review.png" alt="">
+                        </div>
+                    </div>
+                    <div class="booxwrap">
+                        <div class="productsales">
+                            <div class="proimgbox">
+                                <img src="img/sub/bookimg.jpg" alt="">
+                                <table>
+                                    <tr>
+                                        <td><i class="fab fa-sistrix"></i> 크게보기</td>
+                                        <td><i class="fas fa-book-open"></i> 미리보기</td>
+                                    </tr>
+                                </table>
+                                <div class="proweek">
+                                    <ul>
+                                        <li><i class="fas fa-caret-right"></i>주간 <span>45</span>위</li>
+                                        <li>|</li>
+                                        <li><i class="fas fa-caret-right"></i>분야 <span>7</span>위</li>
+                                    </ul>
+                                    <ul>
+                                        <li>판매지수 <span>11,701</span>위<img src="img/sub/exclam.png" alt=""></li>
+                                    </ul>
+                                    <ul>
+                                        <li>공유하기<i class="fab fa-twitter-square"></i><i class="fab fa-facebook-square"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="protable">
+                                <div class="bookbuy">
+                                    <img src="img/sub/bookbuypop.png" alt="">
+                                    <ul>
+                                        <li>저 : <span>조정래</span></li>
+                                        <li><span>|</span></li>
+                                        <li>출판사 : <span>해냄출판사</span></li>
+                                        <li><span>|</span></li>
+                                        <li>발행 : <span>2020년 10월 15일</span></li>
+                                        <li><span>|</span></li>
+                                        <li>쪽수 : <span>380</span></li>
+                                        <li><span>|</span></li>
+                                        <li>제품구성 : <span>전1권</span></li>
+                                        <li><span>|</span></li>
+                                        <li>ISBN : <span>9788965749998</span></li>
+                                    </ul>
+                                    <p>정가<span>16,800원</span></p>
+                                    <div class="newbook">
+                                        <h4>새책</h4>
+                                        <p><span class="newbookcolor">15,120원</span> (10%할인)</p>
+                                        <p><span>840P</span> (5%적립)</p>
+                                    </div>
+                                    <div class="buybox">
+                                        <ul>
+                                            <li>할인혜택</li>
+                                            <li>카드/간편결제 할인 <i class="fas fa-chevron-right"></i></li>
+                                            <li>|</li>
+                                            <li>무이자 할부 <i class="fas fa-chevron-right"></i></li>
+                                        </ul>
+                                        <ul>
+                                            <li>적립혜택</li>
+                                            <li><span>840P</span> (5%적립)</li>
+                                            <li>|</li>
+                                            <li>
+                                                <p>5만원이상 주문시 2천P+등급별 최대 1.5%적립</p> <i class="fas fa-chevron-right"></i>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>추가혜택</li>
+                                            <li><img src="img/sub/addbenefit.jpg" alt=""></li>
+                                            <li>|</li>
+                                            <li><img src="img/sub/addbenefit2.jpg" alt=""></li>
+                                            <li>|</li>
+                                            <li><img src="img/sub/addbenefit3.jpg" alt=""></li>
+                                            <li class="liabsol">I-Point 적립은 출고완료 후 14일 이내 마이페이지에서 <span>적립받기</span>한 경우만 적립됩니다.</li>
+                                        </ul>
+                                        <img src="img/sub/giftcard.jpg" alt="">
+                                        <ul>
+                                            <li>배송정보</li>
+                                            <li><b>하루배송</b><i class="far fa-question-circle"></i>(도서산간 제외)</li>
+                                            <li>|</li>
+                                            <li><strong>서울시 강남구 삼성로 512</strong><i class="far fa-question-circle"></i><i class="fas fa-chevron-right"></i></li>
+                                            <li>|</li>
+                                            <li>배송지연보상 안내 <i class="fas fa-chevron-right"></i></li>
+                                            <li>|</li>
+                                            <li>무료배송</li>
+                                            <li>|</li>
+                                            <li>해외배송가능</li>
+                                        </ul>
+                                        <ul>
+                                            <li>주문수량</li>
+                                            <li class="orderoption">
+                                                <a href="#">-</a>
+                                                <input type="text" value="1" id="bookoption">
+                                                <a href="#">+</a>
+                                            </li>
+                                        </ul>
+                                        <div class="buybutton">
+                                            <button class="bw">북카트 담기</button>
+                                            <button class="bw">바로구매</button>
+                                            <button><i class="far fa-heart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="eventbox">
+                                <div class="etext">이벤트/기획전(2)</div>
+                                <div class="etext">연관도서</div>
+                                <div class="etext">사은품(9)</div>
+                            </div>
+                            <div class="eventbox">
+                                <span class="eprev">&lt;</span>
+                                <span class="enext">&gt;</span>
+                                <div class="eimgbox">
+                                    <img src="img/sub/eventimg1.jpg" alt="">
+                                    <p>[기획] 조정래 작가전<br>2020/10/23 ~ 2020/12/31 </p>
+                                </div>
+                                <div class="eimgbox">
+                                    <img src="img/sub/eventimg2.jpg" alt="">
+                                    <p>[기획] 인생날 인생 책<br>2020/12/17 ~ 2021/01/09 </p>
+                                </div>
+                            </div>
+                            <div class="eventbox">
+
+                                <img src="img/sub/eventbox3_1.jpg" alt="">
+                                <img src="img/sub/eventbox3_2.jpg" alt="">
+                                <img src="img/sub/eventbox3_3.jpg" alt="">
+                                <div class="e3btnbox">
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bookinfo">
+                            <ul>
+                                <li>책정보</li>
+                                <li>이벤트/기획전</li>
+                                <li>추천도서</li>
+                                <li>기대평/리뷰</li>
+                                <li>교환/환불/배송</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bookstory">
+                <div class="bookline">
+                    <h3>이상품의 분류</h3>
+                    <ul>
+                        <li>· home</li>
+                        <li><i class="fas fa-angle-right"></i></li>
+                        <li>도서</li>
+                        <li><i class="fas fa-angle-right"></i></li>
+                        <li>시/에세이</li>
+                        <li><i class="fas fa-angle-right"></i></li>
+                        <li>에세이/산문 <i class="fas fa-caret-down"></i></li>
+                        <li><i class="fas fa-angle-right"></i></li>
+                        <li>한국에세이</li>
+                    </ul>
+                </div>
+                <div class="bookline">
+                    <h3>라이브북</h3>
+                    <iframe src="https://www.youtube.com/embed/eX9lY5qHRio"></iframe>
+                </div>
+                <div class="bookline">
+                    <h3>출판사 서평</h3>
+                    <br>
+                    <p>인생 앞에 더듬거리고<br>
+                        세상 속에서 길 잃을 때</p>
+                    <h5>조정래가 들려주는 신념과 희망<br><br>
+
+                        한국문학의 큰 산 조정래 작가의<br>
+                        문학론, 인생론, 사회론, 역사론의 완결판<br><br>
+
+                        죽을 만큼 치열하고, 고독마저 행복했던 반세기 문학인생의 정수<br>
+                        소설가 조정래가 등단 50주년을 맞아 문학과 삶, 사회를 이야기하다</h5>
+                </div>
+                <div class="bookline">
+                    <h3>목차</h3>
+                    <br>
+                    <h5>작가의 말<br><br>1부 문학과 인생, 인생과 문학</h5>
+                    <p>문학, 길 없는 길 │ 작가로서의 재능 판별법 │ 오늘의 조정래를 있게 한 것은 무엇입니까 │ 예술은 결국 혼자 걸어가는 길이다 │ 좋은 작품이 있을 뿐 │ 소설의 존재 이유 │ 작가의 네 가지 수칙 │ 신념을 가진다는 것 │ 영감의 조건 │ 죽는 날까지 소년이고 싶습니다 │ 노력을 이기는 재능은 없다 │ 설명할 수 없는 자기만의 절실함 │ 완벽을 향한 끝맺음, 퇴고 │ 의미를 담아 제목을 짓는 법 │ 말솜씨와 글솜씨 │ 『사람의 탈』, 역사책으로도 다 하지 못한 이야기 │ 대하소설 작가의 체력 관리 │ 문학인생의 훈장이 되어버린 직업병 │ 더 쓰지 못한 이유 │ 『천년의 질문』, 마지막 절망과 소망을 담다 │ 문학의 이유, 문학 교육의 목적 │ 78세 소설가의 20년 집필 계획 │ 독자 없는 작가는 작가일 수 없다 │ 21세기 대하소설을 기다리며 │ 글 쓰기 참 잘했다 │ 언제나 새롭게, 다르게 │ 마음 쓰며 그려낸 여성 인물 │ 인물 창조의 시작, 이름 짓기 │ 글의 시작과 구상 │ 작가의 능력은</p>
+                </div>
+                <div class="bookline">
+                    <h3>본문중에서</h3>
+                    <br>
+                    <h5>Q. 혹시 선생님도 길을 잃은 듯한 경험이 있으셨는지 궁금합니다.<br></h5><br>
+                    <p>예, 매일 길을 잃고 허둥거린 것이 제 문학인생 50년이라고 할 수 있습니다. 무슨 소리냐고요? 글 쓰는 일이란 순간순간마다 혼자서 결정을 내려야 하는 극한적 고통의 길입니다. 그 길 걷기의 고통스러움을 어느 때부터인가 문인들은 ‘절대 고독’이라고 표현해 오기 시작했습니다. (중략)
+                        우리 몸이 헤아릴 수 없이 많은 세포들로 이루어졌듯 소설도 수없이 많은 문장들로 엮어져 있습니다. 우리 몸은 세포 하나하나가 전부 건강해야만 탄력적인 활력을 발휘하게 됩니다. 마찬가지로 소설의 성패와 감동의 농도는 한 문장, 한 문장의 완벽도가 쌓여 결정나게 됩니다. 그러므로 모든 작가들은 한 문장, 한 문장을 쓸 때마다 무의식적으로, 자동적으로 초긴장 상태에 처하며 혼신의 노력을 다하게 됩니다. 그 상태를 뭐라고 해야 할까요. 그때가 아마 귀하가 말한 ‘길을 잃은 듯한 경험’을 할 때가 아닐까요. 새로운 문장을 쓰려고 하는 그 순간순간의 긴장은 어쩌면 작가들에게는 순간순간 닥쳐오는 좌절이 아닐까 합니다. 그 무수하게 밀어닥치는 좌절을 박차며 새 문장 하나를 이루어내는 것, 그것이 소설 쓰기의 어려움이고 고통일 것입니다.</p>
+                </div>
+                <div class="bookline">
+                    <h3>관련이미지</h3>
+                    <img src="img/sub/relationimage.jpg" alt="">
+                </div>
+                <div class="bookline">
+                    <h3>저자소개</h3>
+                    <img src="img/sub/author.jpg" alt="">
+                    <div class="author">
+                        <div class="authorheader">
+                            <h3>조정래 [저]</h3>
+                            <span>작가 DB보기<i class="fas fa-chevron-right"></i></span>
+                            <span>신작알림 SMS신청<i class="fas fa-chevron-right"></i></span>
+                        </div>
+                        <span>펼쳐보기<i class="fas fa-angle-down"></i></span>
+                        <ul>
+                            <li>생년월일<span>1943.08.17~</span></li>
+                            <li>출생지<span>전남 승주군</span></li>
+                            <li>출간도서<span>141종</span></li>
+                            <li>판매수<span>412,437권</span></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                '작가정신의 승리'라 불릴 만큼 온 생애를 문학에 바쳐온 조정래 작가는 한국문학뿐 아니라 세계문학에서도 유례를 찾아보기 힘든 뛰어난 작품 활동을 펼쳐왔다. 작가정신의 결집체라 할 수 있는 대하소설 [태백산맥] [아리랑] [한강]은 '20세기 한국 현대사 3부작'으로, 1천 5백만 부 돌파라는 한국 출판사상 초유의 기록을 수립했다.
+                                1943년 전라남도 승주군 선암사에서 태어나 광주 서중학교, 서울 보성고등학교를 거쳐 동국대학교 국어국문학과를 졸</li>
+                        </ul>
+                    </div>
+                    <div class="author">
+                        <div class="authorheader">
+                            <h4>저자의 다른책</h4>
+                            <span>전체보기<i class="fas fa-chevron-right"></i></span>
+                        </div>
+                        <div class="anotherbookbox" id="subapi">
+                            <div class="anotherbook"></div>
+                            <div class="anotherbook"></div>
+                            <div class="anotherbook"></div>
+                            <div class="anotherbook"></div>
+                            <div class="anotherbook"></div>
+                            <div class="anotherbook"></div>
+                        </div>
+                        <span>펼쳐보기<i class="fas fa-angle-down"></i></span>
+                    </div>
+                    <div class="author">
+                        <div class="authorheader">
+                            <h4>연관기사<span>(8건)</span></h4>
+                        </div>
+                        <div class="authorinterview">
+
+                            <ul>
+                                <li><span>[작가인터뷰]</span>2020/12/17</li>
+                            </ul>
+                            <div class="interviewimg">
+                                <img src="img/sub/jo2.jpg" alt="">
+                                <span>조정래 인터뷰 2 - “문학은 ‘길 없는 길’... 치열~</span>
+                                <p>국내 작가의 소설이 베스트셀러 1위에 오른 것이 2013년 10월 조정래 작가의 정글만리가 마지막이다. 지금(2015년 7월 첫주)도 베스트셀러 100위...</p>
+
+                            </div>
+                        </div>
+                        <div class="authorinterview">
+
+                            <ul>
+                                <li><span>[작가인터뷰]</span>2021/01/09</li>
+                            </ul>
+                            <div class="interviewimg">
+                                <img src="img/sub/jo1.jpg" alt="">
+                                <span>조정래 인터뷰 1 - “청소년들, 아리랑으로 민족정~</span>
+                                <p>아리랑 청소년판 출간을 맞아 진행된 조정래 작가 특집 인터뷰. 아리랑이 완간 20년 만에 새로운 모습으로 청소년 독자들을 만나게 된 것에 대해 “민족...</p>
+                            </div>
+                        </div>
+                        <span>펼쳐보기<i class="fas fa-angle-down"></i></span>
+                    </div>
+                </div>
+                <div class="bookline">
+                    <h3>상품정보제공고시</h3>
+                    <table class="infotable">
+                        <tr>
+                            <th>저자</th>
+                            <td>조정래</td>
+                            <th>기획사/제작사</th>
+                            <td>해냄출판사</td>
+                        </tr>
+                        <tr>
+                            <th>ISBN</th>
+                            <td>9788965749998(8965749999)</td>
+                            <th>쪽수</th>
+                            <td>380쪽</td>
+                        </tr>
+                        <tr>
+                            <th>크기</th>
+                            <td>148x210(A5국판)</td>
+                            <th>제품구성</th>
+                            <td>전1권</td>
+                        </tr>
+                        <tr>
+                            <th>발행일(출간일)</th>
+                            <td>2020년 10월15일</td>
+                            <th>목차 또는 책소개</th>
+                            <td>상품 상세 정보를 확인하시고, 정보확인이 어려우시면 1:1문의 게시판을 이용 바랍니다.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bookline">
+                    <h3>이벤트 기획전</h3>
+                    <img src="img/sub/eventplan1.jpg" alt="">
+                    <img src="img/sub/eventplan2.jpg" alt="">
+                    <img src="img/sub/eventplan3.jpg" alt="">
+                </div>
+                <div class="bookline">
+                    <h3>[기획] 조정래 작가전</h3>
+                    <img src="img/sub/50th.jpg" alt="">
+                    <div class="planebox">
+                        <span>기획전</span>
+                        <p>· 이벤트 기간<br>2020/12/17 ~ 2021/01/09</p>
+                    </div>
+                    <p>Event 1. 홀로 쓰고, 함께 살다 구매 시, '조정래 원목책갈피' 증정 (포인트 차감/결제)</p>
+                    <p>Event 2. 이벤트 대상 도서 구매 시, '북엔드' 증정 (포인트 차감/결제)</p>
+                </div>
+                <div class="bookline">
+                    <h3>· 이 책과 내용이 비슷한 책<span>?</span></h3>
+                    <div class="anotherbookbox" id="subapi2">
+                        <div class="anotherbook"></div>
+                        <div class="anotherbook"></div>
+                        <div class="anotherbook"></div>
+                        <div class="anotherbook"></div>
+                        <div class="anotherbook"></div>
+                        <div class="anotherbook"></div>
+                    </div>
+                    <span class="blprev">&lt;</span>
+                    <span class="blnext">&gt;</span>
+                </div>
+                <div class="bookline">
+                    <h3>· 이 책을 조회한 회원들이 같이 본 책</h3>
+                    <div class="anotherbookbox" id="subapi3">
+                        <div class="anotherbook"></div>
+                        <div class="anotherbook"></div>
+                        <div class="anotherbook"></div>
+                        <div class="anotherbook"></div>
+                        <div class="anotherbook"></div>
+                        <div class="anotherbook"></div>
+                    </div>
+                    <span class="blprev">&lt;</span>
+                    <span class="blnext">&gt;</span>
+                </div>
+                <div class="bookline">
+                    <h3>· 이 책을 구매한 회원들이 구매한 책</h3>
+                    <div class="anotherbookbox" id="subapi4">
+                        <div class="anotherbook"></div>
+                        <div class="anotherbook"></div>
+                        <div class="anotherbook"></div>
+                        <div class="anotherbook"></div>
+                        <div class="anotherbook"></div>
+                        <div class="anotherbook"></div>
+                    </div>
+                    <span class="blprev">&lt;</span>
+                    <span class="blnext">&gt;</span>
+                </div>
+                <div class="bookline">
+                    <h3>리뷰</h3>
+                    <p>구매 후 리뷰 작성 시, 북피니언 지수 최대 600점</p>
+                    <button>리뷰쓰기</button>
+                    <div class="wrap-star">
+                        <div class='star-rating'>
+                            <span style="width:90%"></span>
+                        </div>
+                        <span>9.8</span> (총 1건)
+                    </div>
+                    <ul>
+                        <li>최근순</li>
+                        <li>|</li>
+                        <li>추천순</li>
+                    </ul>
+                    <div class="wrap-star">
+                        <div class='star-rating'>
+                            <span style="width:90%"></span>
+                        </div>
+                        <span>[해냄] 홀로 쓰고, 함께 살다</span>
+                        <p>우리의 아픈 시대를 관통하는 역사, 그 역사에 대해 긴 소설로 스스로 글감옥에 갇혀 글을 쓰셨다고 하시는 조정래 선생님의 태백산맥, 아리랑, 한강 등의 역작을 보면 단순히 한 번 읽음으로써 그 방대한 내용을 완전히 이해하기란 어렵다. 이 책, 홀로 쓰고, 함께</p>
+                        <ul>
+                            <li>Zx석호바드Zx</li>
+                            <li>|</li>
+                            <li>2020/10/19</li>
+                        </ul>
+                        <ul>
+                            <li>댓글(0)</li>
+                            <li>|</li>
+                            <li>추천(0)</li>
+                            <li>|</li>
+                            <li><span><i class="fas fa-sign-language"></i> 추천하기</span><span><i class="fas fa-laugh-beam"></i> 고맙습니다</span></li>
+                        </ul>
+                        <b>펼쳐보기<i class="fas fa-angle-down"></i></b>
+                    </div>
+                    <div class="firstul">
+                        <ul>
+                            <li><i class="fas fa-angle-double-left"></i> 맨앞</li>
+                            <li><i class="fas fa-angle-left"></i> 이전</li>
+                            <li>1</li>
+                            <li>다음 <i class="fas fa-angle-right"></i></li>
+                            <li>맨뒤 <i class="fas fa-angle-double-right"></i></li>
+                            <li>총 1 페이지</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bookline">
+                    <h3>기대평</h3>
+                    <p>작성시 유의사항 <span>?</span></p>
+                    <div class="textbox">
+                        <div class="tbinput">
+                            <input type="radio" checked class="tbra">
+                            <ul>
+                                <li>기대평</li>
+                                <li>|</li>
+                                <li>평점
+                                    <div class="wrap-star">
+                                        <div class='star-rating'>
+                                            <span style="width:0%"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <textarea maxlength="200" title="이 책의 기대평" onclick="this.select()" onfocus="this.select()">이 책의 기대평(한줄평)을 간단히 남겨주세요.</textarea>
+                        <button>등록하기</button>
+                    </div>
+                    <div class="expectation">
+                        <ul>
+                            <li>
+                                기대평<div class="wrap-star">
+                                    <div class='star-rating'>
+                                        <span style="width:0%"></span>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>최근순</li>
+                                    <li>|</li>
+                                    <li>평점 높은순</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="wrap-star">
+                                    <div class='star-rating'>
+                                        <span style="width:88%"></span>
+                                    </div>
+                                </div>
+                                <b>ryuyuusu***</b>
+                                <p>늘 한결같은 글쓰기 인생을 엿볼 수 있는 책입니다.</p>
+                                <span>2021/01/09</span>
+                            </li>
+                            <li>
+                                <div class="wrap-star">
+                                    <div class='star-rating'>
+                                        <span style="width:67%"></span>
+                                    </div>
+                                </div>
+                                <b>kukhyu***</b>
+                                <p>대한민국 최고의 작가</p>
+                                <span>2020/12/17</span>
+                            </li>
+                            <li>
+                                <div class="wrap-star">
+                                    <div class='star-rating'>
+                                        <span style="width:75%"></span>
+                                    </div>
+                                </div>
+                                <b>imdaehyu***</b>
+                                <p>작가님 등단 50주년 축하드립니다!</p>
+                                <span>2020/10/19</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="firstul">
+                        <ul>
+                            <li><i class="fas fa-angle-double-left"></i> 맨앞</li>
+                            <li><i class="fas fa-angle-left"></i> 이전</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>다음 <i class="fas fa-angle-right"></i></li>
+                            <li>맨뒤 <i class="fas fa-angle-double-right"></i></li>
+                            <li>총 1 페이지</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bookline">
+                    <h3>교환/환불</h3>
+                    <table class="infotable">
+                        <tr>
+                            <th>교환/환불 방법</th>
+                            <td>‘마이페이지 > 취소/반품/교환/환불’ 에서 신청함, 1:1 문의 게시판 또는 고객센터(1577-2555) 이용 가능</td>
+                        </tr>
+                        <tr>
+                            <th>교환/환불 가능 기간</th>
+                            <td>고객변심은 출고완료 다음날부터 14일 까지만 교환/환불이 가능함.</td>
+                        </tr>
+                        <tr>
+                            <th>교환/환불 비용</th>
+                            <td>고객변심 또는 구매착오의 경우에만 2,500원 택배비를 고객님이 부담함.</td>
+                        </tr>
+                        <tr>
+                            <th>교환/환불 불가사유</th>
+                            <td>반품접수 없이 반송하거나, 우편으로 보낼 경우 상품 확인이 어려워 환불이 불가할 수 있음.
+                                <br>배송된 상품의 분실, 상품포장이 훼손된 경우, 비닐랩핑된 상품의 비닐 개봉시 교환/반품이 불가능함
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>소비자 피해보상</th>
+                            <td>소비자 피해보상의 분쟁처리 등에 관한 사항은 소비자분쟁해결기준(공정거래위원회 고시)에 따라 보상 받을 수 있음.
+                                <br>교환/반품/보증조건 및 품질보증 기준은 소비자기본법에 따른 소비자 분쟁 해결 기준에 따라 피해를 보상 받을 수 있음.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>기타</th>
+                            <td>도매상 및 제작사 사정에 따라 품절/절판 등의 사유로 주문이 취소될 수 있음(이 경우 인터파크도서에서 고객님께 별도로 연락하여 고지함)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bookline">
+                    <h3>배송안내</h3>
+                    <p>· 인터파크 도서 상품은 택배로 배송되며, 출고완료 1~2일내 상품을 받아 보실 수 있습니다<br>
+                        · 출고가능 시간이 서로 다른 상품을 함께 주문할 경우 출고가능 시간이 가장 긴 상품을 기준으로 배송됩니다.<br>
+                        · 군부대, 교도소 등 특정기관은 우체국 택배만 배송가능하여, 인터파크 외 타업체 배송상품인 경우 발송되지 않을 수 있습니다.<br>
+                        · 배송비</p>
+                    <table class="infotable">
+                        <tr>
+                            <th>도서(중고도서 포함) 구매</th>
+                            <td>2,000원 (1만원이상 구매 시 무료배송)</td>
+                        </tr>
+                        <tr>
+                            <th>음반/DVD/잡지/만화 구매</th>
+                            <td>2,000원 (2만원이상 구매 시 무료배송)</td>
+                        </tr>
+                        <tr>
+                            <th>도서와 음반/DVD/잡지/만화/중고직배송상품을 함께 구매</th>
+                            <td>2,000원 (1만원이상 구매 시 무료배송)</td>
+                        </tr>
+                        <tr>
+                            <th>업체직접배송상품 구매</th>
+                            <td>업체별 상이한 배송비 적용</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bookline">
+                    <h3>파워링크</h3>
+                    <h4>광고</h4>
+                    <b>신청하기</b>
+                    <div class="subadbbox">
+                        <div class="subadb">
+                            <b>1</b>
+                            <h4>꽃집청년들
+                                <a href="#">https://f-mans.cm</a>
+                            </h4>
+                            <p>- 당일 2시간 배달, 배송사진전송, 전화주문 및 결제가능, 고객만족브랜드 대상.</p>
+
+                        </div>
+                        <div class="subadb">
+                            <b>2</b>
+                            <h4>오늘도 행복한플라워!
+                                <a href="#">https://www.happyhanflower.com</a>
+                            </h4>
+                            <p>- 첫 구매 5천원 상품권 2장, 할인+적립, 꽃배달 품질보증 수원역꽃집 꽃배달전문</p>
+
+                        </div>
+                        <div class="subadb">
+                            <b>3</b>
+                            <h4>수원 이지잉크OA
+                                <a href="#">https://www.ezink.co.kr</a>
+                            </h4>
+                            <p>- 수원 및 인근전지역출장 잉크토너충전 프린터 복합기 복사기 임대 및 판매 번개A/S</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footerservice">
+                <div class="servicebox">
+                    <h3>서비스 ＆ 혜택</h3>
+                    <h4>공지사항 <i class="fas fa-chevron-circle-right"></i></h4>
+                    <h5>[안내]2021년 설 연휴 배송 안내</h5>
+                    <ul>
+                        <li class="fbuy">
+                            <ul>
+                                <li>알뜰구매 혜택</li>
+                                <li>L.POINT 100% 무제한 사용</li>
+                                <li>OK캐쉬백포인트 100% 무제한 사용</li>
+                                <li>북피니언롯데카드 최대30%청구할인</li>
+                                <li>NEW우리V카드10%청구할인</li>
+                            </ul>
+                        </li>
+                        <li class="fmainpoint">
+                            <ul>
+                                <li>핵심서비스</li>
+                                <li><img src="img/main/fmainpoint1.jpg" alt="" class="rotate">북디비</li>
+                                <li><img src="img/main/fmainpoint2.jpg" alt="" class="rotate">B2B 대량주문</li>
+                                <li><img src="img/main/fmainpoint3.jpg" alt="" class="rotate">인터파크 Global</li>
+                                <li class="fnew"><img src="img/main/fmainpoint4.jpg" alt="" class="rotate">대량구매 할인 </li>
+                                <li><img src="img/main/fmainpoint5.jpg" alt="" class="rotate">도서 모바일 App</li>
+                            </ul>
+                        </li>
+                        <li class="fdelivery">
+                            <ul>
+                                <li>안심배송서비스</li>
+                                <li>당일/하루 배송 보장</li>
+                                <li>해외주문배송 서비스</li>
+                                <li>모든책배송 보장</li>
+                                <li>안심번호 서비스</li>
+                            </ul>
+                        </li>
+                        <li class="fcenter">
+                            <ul>
+                                <li>고객센터</li>
+                                <li class="ulc">
+                                    <ul>
+                                        <li>일반 문의<span>1577 - 2556</span></li>
+                                        <li>중고판매 문의<span>1577 - 2556</span></li>
+                                        <li>eBook 문의<span>1577 - 2547</span></li>
+                                    </ul>
+                                </li>
+                                <li class="ulc2">
+                                    <ul>
+                                        <li>월~금 (09:00~18:00),</li>
+                                        <li>토요일,일요일, 공휴일 휴무</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="fpark">
+                            <ul>
+                                <li><span>BOOK'PARK</span> <span> 명동 북앤샵</span></li>
+                                <li><img src="img/main/bookpark.png" alt=""></li>
+                                <li><span>운영시간 10:00~22:00</span></li>
+                                <li>-설/추석 당일 휴무 (운영상 변동가능)</li>
+                                <li><span>서울 용산구 한남동 블루스퀘어 2,3층</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerline">
+                <div class="line"></div>
+            </div>
+            <div class="footerperson">
+                <div class="footerpersonbox">
+                    <ul>
+                        <li id="fp1">그룹사 소개<i class="fas fa-caret-down"></i>
+                            <ul>
+                                <li>아이마켓코리아</li>
+                                <li>인터파크로지스틱스</li>
+                                <li>인터파크시어터</li>
+                                <li>블루스퀘어</li>
+                                <li>FAN[판]스퀘어</li>
+                                <li>디지털아이디어</li>
+                                <li>디지아트</li>
+                                <li>페디아</li>
+                            </ul>
+                        </li>
+                        <li>개인정보처리방침</li>
+                        <li>|</li>
+                        <li>청소년보호정책</li>
+                        <li>|</li>
+                        <li>이용약관</li>
+                        <li>|</li>
+                        <li>IR</li>
+                        <li>|</li>
+                        <li>회사소개</li>
+                        <li>|</li>
+                        <li>채용공고</li>
+                        <li>|</li>
+                        <li>우수고객제도</li>
+                        <li>|</li>
+                        <li>수익배분프로그램</li>
+                        <li>|</li>
+                        <li>신규출판사</li>
+                        <li>|</li>
+                        <li>광고안내</li>
+                        <li>|</li>
+                        <li>판매자매니저</li>
+                    </ul>
+                    <div class="finterpark">
+                        <ul>
+                            <li>인터파크</li>
+                            <li>서울특별시 강남구 삼성로 512 삼성동빌딩 10층(삼성동)</li>
+                            <li>대표이사 이기형, 강동화</li>
+                            <li>사업자등록번호 220-81-47821 ㅣ 통신판매업신고 2015-서울강남-01050</li>
+                        </ul>
+                        <ul>
+                            <li>고객센터 <span>문의전 클릭<i class="fas fa-angle-right"></i></span></li>
+                            <li>전화 1577-2555</li>
+                            <li>팩스 02-6924-9050</li>
+                            <li>개인정보보유기간 : 회원탈퇴시까지</li>
+                            <li>개인정보보호책임자 : 윤혜정 <b>cpo@interpark.com</b></li>
+                        </ul>
+                        <ul>
+                            <li>구매안전 서비스</li>
+                            <li>고객님은 안전거래를 위해 현금으로 5만원 이상 결제시 구매자가 보호를 받을 수 있는 구매안전 서비스를(쇼핑몰보증보험) 이용하실수 있습니다.</li>
+                            <li class="fmar"><span>서비스 가입사실 확인<i class="fas fa-angle-right"></i></span></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <p>인터파크도서에 등록된 중고책 오픈마켓 상품은 그 내용과 책임이 모두 판매자에게 있으며, 인터파크도서는 해당상품과 내용에 대해 책임지지 않습니다.</p>
+                        <span>Copyright ⓒ INTERPARK Corporation All rights reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

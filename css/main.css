@@ -1,0 +1,398 @@
+@charset "UTF-8";
+.slider {width:100%; height:365px; position: relative;}
+.slideadv {width:100%; height:365px; position: relative; background:#ADBFFF;}
+
+
+.jojung {position: absolute; left:-100px; top:15%; z-index: 2;}
+.ohunyoung {position: absolute; left:-170px; bottom:-53px; cursor: pointer; z-index: 2;}
+.jojung2 {width:1140px; height:100%; position: absolute; z-index: 1; cursor: pointer; display: none;}
+.jojung2 img {width:100%; height:100%;}
+.guide2 {position: absolute; bottom:2%; right:85px; cursor: pointer}
+.guide3 {position: absolute; bottom:2%; right:20px; cursor: pointer;}
+.advbox {width:1140px; margin:0 auto; height:315px; display: flex;}
+.adv {width:80%; height:100%; position:relative;}
+.bestsell {width:20%; height:100%; background-color:rgba(1,1,1,0.4); display: flex; flex-wrap: wrap; align-content: flex-start; color:#fff; }
+.besttext {width:100%; height:35px; line-height:35px; padding:0 10px; border:1px solid #b3b3b3; border-bottom:1px solid #626262; color:#fff1a2; font-weight: bold; font-size:15px;}
+.towewrap {width:100%; display: flex; height:auto; flex-wrap: wrap; letter-spacing: -0.8px;}
+.towewrap .todaybox {width:50%; height:30px;  text-align: center; line-height:26px; font-size:12px; border-top:1px solid #b3b3b3; border-right: 1px solid #b3b3b3; cursor: pointer;}
+.towewrap .weekbox {width:50%; height:30px;  text-align: center; line-height:26px; font-size:12px; border-left:1px solid #b3b3b3; border-bottom:1px solid #b3b3b3; border-top:1px solid #b3b3b3; border-left: 1px solid #888; cursor: pointer;}
+
+.sellranking1 {width:100%; height:215px; font-size:12px; display: flex; flex-wrap: wrap; align-content: space-around; padding:0 20px; border-bottom: 1px solid #b3b3b3;}
+
+.sellranking2 {width:100%; height:215px; font-size:12px; display: flex; flex-wrap: wrap; align-content: space-around; padding:0 20px; border-bottom: 1px solid #b3b3b3;}
+
+
+.fa-minus {color:#929292; margin:3px 0 0 0; font-size:6px;  padding:0 3px 0 0;}
+.fa-caret-up {color:#eb3a3a; padding:0 5px 0 0; font-size:14px;}
+.fa-caret-down {color:#2083e0; padding:0 5px 0 0; font-size:14px;}
+
+.sellranking1 div {width:100%; display: flex; flex-wrap: nowrap;}
+.sellranking1 div span:first-child {font-weight: bold; padding: 0 10px 0 0; font-size:13px;}
+.sellranking1 div p { padding:0 0 0 5px; font-size: 12px;}
+.sellranking1 div h5 {font-size:5px; color:red; margin:0 0 0 -2px; }
+
+.sellranking2 div {width:100%; display: flex; flex-wrap: nowrap;}
+.sellranking2 div span:first-child {font-weight: bold; padding: 0 10px 0 0; font-size:13px;}
+.sellranking2 div p { padding:0 0 0 5px; font-size: 12px;}
+.sellranking2 div h5 {font-size:5px; color:red; margin:0 0 0 -2px; }
+
+.bestchoo {width:100%; font-size:15px; display:flex; height:35px; font-size:12px; border-top: 1px solid #665f5a}
+.choobox {color:#fff1a2; text-align: center; width:53px; line-height: 35px;  background-color:rgba(0.4,0.4,0.4,0.4); height:100%; font-weight: bold;}
+.countbox {width:170px; line-height: 35px; text-align: center}
+
+
+.slideclick {width:100%; height:50px; background-color:#f7f7f7; position: absolute; bottom:0; left:50%; transform: translateX(-50%);}
+
+
+#booklist {width:1140px; height:100%; margin:0 auto; border-top:1px solid #000; display: flex; justify-content: flex-start; background-color: #f7f7f7}
+#booklist li {float:left; width:16%; text-align: center; height:100%; line-height:45px; font-size:13px; font-weight: bold; cursor: pointer; position: relative; letter-spacing: -0.8px;}
+#booklist li:first-child {border-top:3px solid red; margin:-1px 0 0 0;}
+#booklist li:hover {border-top:3px solid red; margin:-1px 0 0 0;}
+
+
+#bl1 {width:100%; height:100%; position: absolute; top:0;}
+#bl1 > li {position: absolute; width:100%; height:100%;}
+#bl1 > li:not(:first-child) {display:none;}
+#bl1 > li > img {width:100%; height:110%;}
+.slideimghop > ul {width:100%; height:100%; display:flex; justify-content: space-around; align-items: center;}
+.slideimghop > ul > li {width:20%; height: 210px; float:left; text-align: center; font-size:12px;}
+.slideimghop > ul > li > span {font-weight: bold; line-height:180%;}
+.slideimghop > ul > li > p {font-size: 11px;}
+.slideimghop > ul > li > img { width:100%; height:100%;}
+
+section {width:100%; height:auto; margin:0 auto; }
+
+
+.recommendwrap {width:1140px; margin:80px auto; height:900px; display: flex; justify-content: space-between; flex-wrap: wrap; align-content: flex-start; }
+
+/*인터파크 추천!*/
+.interparkwrap {width:855px; height:330px; border-top:1px solid #000; position: relative;}
+.interparkwrap > h3 {width:300px; height:50px; background-color: #fff; position: absolute; top:-26px; left:50%; transform:translateX(-50%); text-align: center; font-size: 30px; font-weight: normal;}
+.interparkwrap > h3 > span {color:#ff483b}
+.interparkwrap > .intermore {position: absolute; right:10px; top:-20px; color:#666; font-size:12px;}
+.intermore:hover {text-decoration: underline; cursor: pointer;}
+/*인터파크 옆 배너 1*/
+
+.giftcardbox {width:95px; height:205px; position: absolute; top:10px; left:-130px; border:1px solid #e8e8e8}
+.sideslidewrap {width:100%; height:100%; position: relative;}
+.sideslidewrap img {width:100%; height:80%; position: absolute; cursor: pointer;}
+.sideslidewrap img:not(:first-child) {display: none;}
+.sideslidewrap span {position: absolute; font-size:10px; padding:1px 2px; bottom:20px; color:#b5b5b5; background-color: #e8e8e8; border:1px solid #d5d5d5; cursor: pointer;}
+.sideslideprev {left:31.5%;}
+.sideslidenext {right:31.5%;}
+
+/*인터파크 옆 배너 2*/
+
+.lifebox {width:95px; height:140px; position: absolute; top:225px; left:-130px; border:1px solid #e8e8e8; cursor: pointer;}
+.lifebox img {width:100%; height:100%;}
+
+/* 인터파크 추천의 좌우로 움직이는 스판 클릭 버튼*/
+.interparkwrap > .interprev, .interparkwrap > .internext {position:absolute; top:40%; font-size:25px; color:#c9c9c9; cursor: pointer; }
+.interparkwrap > .interprev:hover, .interparkwrap > .internext:hover {color:#ef544d}
+.interprev {left:0;}
+.internext {right:0;}
+
+/*인터파크 추천 슬라이드 animate*/
+#interslidewrap {width:722px; height:283px; position: absolute; top:80%; left:50%; transform: translate(-50%,-90%); overflow:hidden; letter-spacing: -0.8px;}
+#interslidewrap > ul {width:2888px; height:253px;}
+#interslidewrap > ul > li {width:722px; height:253px; float:left; display: flex; justify-content:center;}
+#interslidewrap > ul > li > .interimgbox {width:160px; height:233px; margin:30px 0 0 0;}
+#interslidewrap > ul > li > .interimgbox > img {width:100%; height:100%; box-shadow: 4px 4px 4px #ddd}
+#interslidewrap > ul > li > .wrap-star {width:400px; height:200px; margin:30px 0 0 0; line-height:25px; padding:10px 40px 0 40px;}
+#interslidewrap > ul > li > .wrap-star > span {line-height: 20px;}
+#interslidewrap > ul > li > .wrap-star > h5 {font-size:12px;}
+#interslidewrap > ul > li > .wrap-star > p {font-weight: bold;}
+#interslidewrap > ul > li > .wrap-star:hover > p {text-decoration: underline; cursor: pointer;}
+.interpbox {font-size:12px;}
+.interpbox {width:100%; height:100px; margin:10px 0 0 0; background-color: #f7f7f7; padding:10px;}
+
+/*하트클립 표시*/
+.interimgbox {position: relative;}
+.clipbox {position: absolute; z-index: 2; top:-10px; left:10px;}
+
+
+/*별점 표시*/
+.star-rating {width:85px; }
+.star-rating,.star-rating span {display:inline-block; height:15px; overflow:hidden; background:url(../img/main/star.png)no-repeat; }
+.star-rating span{background-position:left bottom; line-height:0; vertical-align:top; }
+.wrap-star > span {color:#EF544D; font-weight: bold; font-size:18px;}
+
+
+/*Trend & Issue*/
+.trendwrap {width:265px; height:330px; border-top:1px solid #000; background-color: #f7f7f7; position: relative; letter-spacing: -0.8px;}
+.trendwrap > span {position: absolute; left:0; top:-22px; font-size:14px; font-weight: bold; color:#555;}
+
+.trendimgbox {width:100%; height:100%; position: relative;}
+.trendimgbox img {width:100%; height:100%; position: absolute;}
+.trendimgbox img:not(:nth-child(2)) {display: none;}
+
+.trendclick {position: absolute; z-index: 2; top:15px; left:50%; transform: translateX(-50%); letter-spacing: 7px; font-size:11px; color:#d6d6d6;}
+.trendclick li {cursor: pointer;}
+.trendclick li {float:left; }
+.trendclick li:nth-of-type(2) {color:#3fd0ff}
+
+
+/*출판사 초이스!*/
+.choicewrap {width:415px; height:365px; border:1px solid #dcdcdc; position: relative; margin:50px 0 0 0; letter-spacing: -0.8px;}
+.choicewrap > h3 {position: absolute; top:-35px; left:0; font-size: 20px; letter-spacing: 0.3px;}
+.choicewrap > h3 > span {color:#ff483b}
+.choice {width:100%; height:100%; position: absolute; top:0;}
+.choicewrap > span {position: absolute; top: -25px; font-size:14px; border: 1px solid #c3c3c3; color:#777; padding:0 3px; line-height:16px; height:20px; cursor: pointer;}
+
+.choicewrap > h5 {position: absolute; top:-25px; right:55px; font-size:14px; font-weight: normal;}
+.choicewrap > h5:not(:nth-of-type(1)) {display:none;}
+.choicewrap > h5 > span {color:#f37973}
+
+.choprev {right:28px;}
+.chonext {right:5px;}
+#cb2 {display:none;}
+
+/* 출판사초이스 하얀배경 쪽 */
+.choicebox {width:100%; height:60%; padding:20px 30px;}
+.choicebox > img {position: absolute; right: 10px; top:10px; cursor: pointer; }
+.chojson > ul {width:100%; height:100%; position: relative;}
+.chojson > ul > li {position: absolute;}
+.chojson > ul > li:not(:first-child) {display:none;}
+.chojson > ul > li > img {float:left; margin:0 20px 0 0; cursor: pointer;}
+.chojson > ul > li > h3 {font-size:15px; margin:10px 0 0 0px; color:#666;}
+.chojson > ul > li:hover > h3 {text-decoration: underline; cursor: pointer;}
+.chojson > ul > li > p {font-size:13px; margin:10px 0 10px 0px; color:#757b89; width:300px;}
+.chojson > ul > li > span {font-size:14px; color:#434343;}
+.chojson > ul > li > span > b {font-size:14px; color:#ff483b;}
+.chojson > ul > li > h5 {font-size:13px; color:#434343; margin:5px 0 0 0;}
+
+/* 출판사초이스 회색배경 쪽 */
+.choicebottombox {width:100%; height:40%; background-color: #f9f9f9; border-top:1px solid #dcdcdc}
+.choicebottombox > ul {width:100%; height:100%; display: flex; justify-content: space-around; align-items: center;}
+.choicebottombox > ul > li {width: 65px; height:100%; position: relative; cursor: pointer;}
+.choicebottombox > ul > li:hover {border-top:2px solid #ff483b}
+.choicebottombox > ul > li:hover::before {position: absolute; top:-7px; left:40%; content: " ";  border-bottom: 5px solid; border-left: 5px solid rgba(0, 0, 0, 0); border-right: 5px solid rgba(0, 0, 0, 0); color: #ff483b; transform: rotate(-360deg);}
+
+.choicebottombox > ul > li > img{width:100%; height:95px; box-shadow: 2px 2px 2px #ddd; margin:20px 0 0 0;}
+
+/*김태훈의 게으른 책읽기*/
+.kimtaehoonwrap {width:415px; height:365px; border:1px solid #dcdcdc; position: relative; margin:50px 0 0 0;}
+.kimtaehoonwrap > h3 {position: absolute; top:-35px; left:0; font-size: 20px;}
+.kimtaehoonwrap > h3 > span {color:#ff483b}
+.kimbox {width:100%; height:70%;}
+.kimbox > img {width:100%; height:100%; cursor: pointer;}
+.kimbottombox {width:100%; height:30%; background-color: #f9f9f9; border-top:1px solid #dcdcdc; padding:10px 30px;}
+.kimtext {width:100%; height:50%; display: flex; justify-content: space-between; align-items: center}
+.kimtext > i {font-size:32px; color: #777;}
+.kimtext > span {color: #777; font-size:13px; cursor: pointer;}
+.kimtext > p {color:#777; font-size:13px; font-weight: bold;}
+.kimtext:hover > p {cursor: pointer; text-decoration: underline;}
+/*이 책 어때?*/
+.howbooklikethat {width:265px; height:365px; border:1px solid #dcdcdc; position: relative; margin:50px 0 0 0;}
+.howbooklikethat > h3 {position: absolute; top:-35px; left:0; font-size: 20px;}
+.howbooklikethat > h3 > span {color:#ff483b}
+.howbookbox {width:265px; height:100%; display: flex; flex-wrap: wrap; justify-content: center; position: relative; align-content: center;}
+.howulbox2 {width:150px; height:55px;  margin:10px 0 0 0; overflow: hidden}
+.howulbox2 > ul {width:795px; height:55px; text-align: center; line-height: 180%;position: relative; }
+.howulbox2 > ul p {font-size:12px;}
+.howulbox2 > ul span {font-size:13px; margin:10px 0 0 -50px;}
+.howulbox2:hover > ul span {text-decoration: underline; cursor: pointer; color:#666;}
+.howulbox2 > ul li {width: 150px; float:left; margin:0 0 0 0px;}
+.howbookbox span {position: absolute; top:40%; transform: translateY(-40%); font-size:20px; color: #c9c9c9; cursor: pointer;}
+.howbookbox span:hover {color:#ef544d}
+.howprev {left:15px;}
+.hownext {right:15px;}
+.howbookimg {width:172.25px; height:70%;  background-image: url(../img/main/img_eBookCoverBig.png); background-size:100% 99%;}
+.howulbox {width:150px; height:210px; margin:20px 0 0 12px; overflow: hidden}
+.howbookimg ul {width:450px; height:100%; position: relative;} 
+.howbookimg ul li {width:150px; height:100%; float:left}
+.howbookimg ul li img {width:100%; height:100%; cursor: pointer;}
+
+/*로그인 추천*/
+.loginrecommendwrap {width:100%; height:150px; overflow: hidden; margin:10px 0 0 0;}
+.loginrecommendwrap > img {width:100%; height:100%;  cursor: pointer;}
+
+
+
+
+/*분야별 추천*/
+.field {width:1140px; height:auto; border-top:1px solid #000; margin:0px auto; position: relative; letter-spacing: -0.6px;}
+.ftbox {position: absolute; top:-26px; font-size:30px; width:300px; height:50px; text-align: center; background-color: #fff; left:50%; transform:translateX(-50%);}
+.ftbox span {color:#ff483b}
+.art2 > h4 {position: absolute;}
+.field > article {width:100%; height:auto; }
+#fieldbooklist {margin:40px auto; width:100%; height:45px; display: flex; justify-content: space-around; border-bottom: 1px solid #c9c9c9}
+#fieldbooklist li {float:left; width:11%; height:100%; line-height:45px; text-align: center; cursor: pointer; position: relative; font-weight: bold; font-size: 14px;}
+#fieldbooklist li:hover {border-bottom:2px solid #e66a57; color:#e66a57; }
+#fieldbooklist li:nth-child(2) {border-bottom:2px solid #e66a57; color:#e66a57; }
+#fieldbooklist li:hover::before {content:""; position: absolute; left:50%; transform: translate(-50%); bottom:-12px; border-width: 5px; border-style:solid; border-color:#e66a57 transparent transparent transparent}
+#fdiv1,#fdiv3,#fdiv4,#fdiv5,#fdiv6,#fdiv7 {display:none;}
+#fdiv1, #fdiv2,#fdiv3,#fdiv4,#fdiv5,#fdiv6,#fdiv7 {width:100%; height: auto; position: relative;}
+
+
+.ftextboxwrap {width:100%; height:auto;}
+.ftextwrap {width:1000px; height:auto; display: flex; justify-content:space-between; align-content: center; flex-wrap: wrap; margin:0 auto; position: relative;}
+.ftextwrap span {position: absolute; top:50%; transform:translateY(-50%); font-size:38px; color:#cdcdcd; font-weight: bold; cursor: pointer;}
+.ftextwrap span:hover {color:#ef544d}
+.fprev {left: -50px;}
+.fnext {right: -50px;}
+
+.ftextbox {width:130px; height:280px; border-radius:4px; border:1px solid #ddd; box-shadow:4px 4px 4px #eee; text-align: center; display: flex; justify-content: center; align-content: flex-start; flex-wrap: wrap; padding:0 10px;}
+.ftextbox img {width:120px; height:175px; cursor: pointer;}
+.ftextbox h5 { margin:10px 0 0 0; font-size:12px; }
+.ftextbox:hover h5 {text-decoration: underline; cursor: pointer;}
+.ftextbox h6:nth-of-type(1) {width:60px; font-size:14px; margin:10px 0 0px 0; width:100px; font-weight: normal;}
+.saleprice {color:#ddd; text-decoration: line-through; font-size:12px; width:50px; height:20px; }
+.saleprice2 {color:#e66a57;}
+.fadvwrap {display: flex; justify-content: space-between; width:1000px; margin:0 auto;}
+.fadv {width:490px; height:80px; margin:30px 0px 0 0;}
+.fadv > img {width:100%; height:100%; cursor: pointer;}
+
+/* 이달 이책 , 단독 혜택, 중고도서 wrap*/
+.usedwrap {width:1140px; height: 1500px; margin:0px auto; display: flex; justify-content: space-between; flex-wrap: wrap; align-content: flex-start; letter-spacing: -0.8px;}
+
+/* 이달 이책 */
+.thismonth {width:500px; height:375px; margin:90px 0 0 0; border-top: 1px solid #000; position: relative; letter-spacing: -0.8px;}
+.thismonth > h3 {position: absolute; top:-32px; font-size:18px; font-weight: normal;}
+.thismonth > h3 > span {color:#e66a57;}
+.thismonth > h4 {position: absolute; top:-26px; left:140px; font-size:12px; color:#666; font-weight: normal; cursor: pointer;}
+.thismonth > h4:hover {text-decoration: underline;}
+
+.thismonth > span {position: absolute; top:-28px; font-size:14px; border: 1px solid #c3c3c3; color:#777; padding:0 3px; line-height:16px; height:20px; cursor: pointer;}
+
+.thisprev {right:28px;}
+.thisnext {right:5px;}
+.thisulbox {width:500px; height:375px; overflow: hidden; padding: 30px;}
+.thisulbox > ul {width:1600px; height:100%;}
+.thisulbox > ul > li {width:400px; height:100%; float: left;}
+.thisulbox > ul > li:not(:first-child) {display: none;}
+.thisulbox > ul > li > .wrap-star {display: flex; flex-wrap: wrap; position: relative; width:80%; height:50%; align-content: center; margin:20px 0 0 110px;}
+.thisulbox > ul > li > .wrap-star > .star-rating {width:90px;}
+.thisulbox > ul > li > .wrap-star > span {width:100px;height:15px; line-height: 10px;}
+.thisulbox > ul > li > .wrap-star > p {width:100%; height: 30px; margin:10px 0 0 0; font-weight: bold; color: #555;}
+.thisulbox > ul > li > .wrap-star:hover > p {text-decoration: underline; cursor: pointer;}
+.thisulbox > ul > li > .wrap-star > b {width:100%; height: 30px; color:#555;}
+.thisulbox > ul > li > .wrap-star > b > span {color:#c9c9c9; text-decoration: line-through;}
+.thisulbox > ul > li > .wrap-star > .interpbox {width:350px; height:30px; padding: 0; background-color: #fff; color:#555; margin:-20px 0 0 0;}
+.thisulbox > ul > li > .wrap-star > .thisimgbox {width:100px; height:100%; position: absolute; left:-110px; }
+.thisulbox > ul > li > .wrap-star > .thisimgbox > img{width:100px; height:100%; box-shadow: 2px 2px 2px #ddd; cursor: pointer;}
+
+/* 단독 혜택 */
+.exclusive {width:600px; height:375px; margin:90px 0 0 0; border-top: 1px solid #000; position: relative;}
+.exclusive > span {position: absolute; top:-26px; right:10px; font-size:12px; color:#666; font-weight: normal; cursor: pointer;}
+.exclusive > span:hover {text-decoration: underline;}
+.exclusive > .exab {width:400px; height:50px; position: absolute; top:-50px; display:flex; justify-content: space-around; align-items: center;}
+.exclusive > .exab > li {width:25%; height:100%; line-height:45px; text-align: center; background-color: #fff; font-weight: bold; font-size:14px; cursor: pointer;}
+.exclusive > .exab > li:not(:nth-child(2)) {border-bottom: 1px solid #000;}
+.exclusive > .exab > li:nth-child(2) {border-left:1px solid #000; border-top:1px solid #000; border-right: 1px solid #000; color:#E35039; }
+
+.exclusive > .exdiv {position: relative; width:100%; height:100%; padding:30px;}
+.exclusive > .exdiv > li {position: absolute; width:90%; height:100%;}
+.exclusive > .exdiv > li:not(:nth-child(2) ) {display: none;}
+.exdivsub {display: flex; width:100%; height:100%; justify-content: space-around; align-items: center;}
+.exdivsub > li { width:21%; height:85%;}
+.exdivsub > li > img {width:100%; height:185px; box-shadow: 2px 2px 2px #ddd; cursor: pointer;}
+.exdivsub > li > h4 {font-size:14px; width:100%; text-align: center;color: #626262; margin:10px 0 0 0;}
+.exdivsub > li:hover > h4 {text-decoration: underline; cursor: pointer;}
+.exdivsub > li > span {font-size:12px; width:100%; text-align: center; display: block; color:#777; margin:15px 0 0 0; line-height: 180%}
+.exdivsub > li > h5 {font-size:12px; width:100%; text-align: center; color:#39c1f6}
+
+
+/* 중고도서 */
+.hotused {width:100%; height:305px;  margin:50px 0 0 0; border-top: 1px solid #000; position: relative; display: flex; padding:0 30px; letter-spacing: -0.8px;}
+.hotused > h3 {position: absolute; left:50%; transform: translateX(-50%); top:-25px; background-color:#fff; width:300px; height:50px; text-align: center; font-size:30px;}
+.hotused > h3 > span {color:#fb2f30}
+.hotused > span {position: absolute; right:10px; font-size:12px; color:#666; top:-25px; cursor: pointer;}
+.hotused > span:hover {text-decoration: underline;}
+.hotusedbox1 {width:70%; height:90%; display: flex; align-items: center; margin:40px 0 0 0;}
+.hotusedbox1 > ul {width:100%; height:100%; display: flex; justify-content: flex-start;}
+.hotusedbox1 > ul > li {width:22.5%; height:100%; margin:0 20px 0 0; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+.hotusedbox1 > ul > li > img {cursor: pointer; box-shadow: 2px 2px 2px #ddd}
+.hotusedbox1 > ul > li > h4 {text-align: center; font-size:13px; margin:20px 0 0 0; color: #555; cursor: pointer;}
+.hotusedbox1 > ul > li:hover > h4 {text-decoration: underline;}
+.hotusedbox1 > ul > li > span {width:100%; text-align: center; margin:3px 0 0 0; color:#aaa; text-decoration: line-through; font-size:14px;} 
+.hotusedbox1 > ul > li > h5 {width:100%; text-align: center} 
+.hotusedbox1 > ul > li > h5 > span {color:#e5af54; font-size:14px;}
+
+.hotusedbox2 {width:30%; height:80%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center; margin:50px 0 0 0; }
+.hotusedbox2 img {cursor: pointer; width:100%; height:124px;}
+.hotusedbox2 img:nth-child(2) {margin:15px 0 0 0;}
+
+.etcwrap {width:100%; height:600px; margin:50px 0 0 0; display: flex; justify-content: space-between; align-content: space-between; flex-wrap: wrap}
+
+/*etc cd판매 이미지들*/
+.etcbox {width:32%; height: 83%; border-top:1px solid #000; background-color: #f8f8f8; position: relative;}
+.etcbox > h4 {position: absolute; top:-25px; color:#3d4d5f}
+.etcbox > span {position: absolute; right:5px; font-size:11px; color:#888; top:-19px; cursor: pointer;}
+.etcbox > span:hover {text-decoration: underline;}
+
+/* cd위 박스 */
+.etccdtext {width:100%; height:350px; position: relative; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;}
+
+.etccdtext > span {position: absolute; top:50%; transform: translateY(-50%); color: #c9c9c9; font-size:20px; cursor: pointer;}
+.etccdtext > p {width:100%; text-align: center; margin:10px 0 0 0; font-size:13px; color: #444}
+.etccdtext:hover > p {text-decoration: underline; cursor: pointer;}
+.etccdtext > h4 {width:180px; text-align: center; line-height: 180%; font-size: 14px;}
+.etccdtext > h4 > span {color: #aaa; text-decoration: line-through; font-weight: normal; font-size:14px;}
+.etccdtext > h4 > i {line-height: 26px; font-size: 13px; font-weight: normal; color:#14b5f4;}
+.cdprev {left:30px;}
+.cdnext {right:30px;}
+.etcimgbox {width:60%; height:70%; background-color: #fff; position: relative; }
+.etcimgbox > img {width:100%; height:100%; cursor: pointer;}
+.etcimgbox > .spanbox {position: absolute; font-size:13px; color:#fbf67a; background-color:#14b5f4; width:50px; height:50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; line-height: 15px; right:-20px; top:-20px; cursor: pointer;}
+
+/* cd아래 박스 */
+.etccdbox {width:100%; height:147px; border-top:1px solid #ececec; display: flex; justify-content:center; align-items: center;}
+.cdimgboxwrap {width:40%; height:80%; display: flex; justify-content: center; flex-wrap: wrap;}
+.cdimgboxwrap > span {font-size:11px; width:100%; text-align: center; color: #3d4d5f; cursor: pointer;}
+.cdimgboxwrap:hover > span {text-decoration: underline;}
+.cdimgboxwrap:first-child { margin:0 20px 0 0;}
+.cdimg {width:80%; height:80%; border:1px solid #e3e3e3; margin:5px auto;}
+.cdimg > img {width:100%; height:100%; cursor: pointer;}
+/* 3번째 cd박스*/
+.etcbox:nth-of-type(3) > .etccdtext {height:500px;}
+.etcbox:nth-of-type(3) > .etccdtext > h2 {width:100%; text-align: center; margin:10px 0 0 0; font-size:16px; color:#3d4d5f;}
+.etcbox:nth-of-type(3) > .etccdtext > h3 {width:100%; text-align: center; margin:10px 0 0 0; color:#222; font-size:13px;}
+.etcbox:nth-of-type(3) > .etccdtext:hover > h3 {text-decoration: underline; cursor: pointer;}
+.etcbox:nth-of-type(3) > .etccdtext:hover > p {text-decoration: none; cursor: default}
+.etcbox:nth-of-type(3) > .etccdtext > p {margin:5px 0 0 0; font-size:11px; color:#bfa4b0}
+.etcbox:nth-of-type(3) > .etccdtext > .etcimgbox {background: url(../img/main/img_eBookCoverBig.png); background-size: contain; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center;}
+.etcbox:nth-of-type(3) > .etccdtext > .etcimgbox > img {margin:-15px 0 0 0px; width:185px; height:273px; cursor: pointer;}
+
+/*etc 광고 배너*/
+.etcadv {width:32%; height: 15%; position: relative;}
+.etcadv img {width:100%; height:100%; position: absolute; cursor: pointer;}
+.etcadv img:not(:first-child) {display: none} 
+.etcclick {position:absolute; z-index: 2; top:2px; left:15px; font-size:9px; color:#fff;}
+.etcclick li {cursor: pointer; transform: scale(0.8); width:15px; height:20px; text-align: center; line-height:17px;}
+.etcclick li {float:left; }
+.etcclick li:nth-of-type(1) {color:#3fd0ff}
+
+
+.bookdbwrap {width:100%; height:400px; margin:0px auto; background-color: #f3f4f6; display: flex; justify-content: center; align-items: flex-start; position: relative; letter-spacing: -0.8px;}
+.boxnonewrap {margin:40px 0 0 0}
+.boxnonewrap:not(:first-child) {display:none;}
+.bookclickbox {z-index: 2; width:1100px; margin:25px 0 0 0;}
+.bookdbclick li {float: left; }
+
+.bookdbclick {font-size:9px; color:#fff;}
+.bookdbclick li {cursor: pointer; width:15px; height:20px; text-align: center; line-height:17px;}
+.bookdbclick li {float:left; }
+.bookdbclick li:nth-of-type(1) {color:#3fd0ff}
+
+
+.bookdbbox {width:1100px; height:340px; display: flex; justify-content: space-between; position: absolute; cursor: pointer;}
+.bookdbbox:not(:first-child) {display: none;}
+.bookdbtextbox {background-color: #fff; border: 1px solid #e5e5e5; transition: 0.3s}
+.bookdb:hover > .bookdbtextbox {background-color: #f3f4f6}
+.bookdb {width:24%; height:100%;}
+.bookdb:not(:first-child) {width:24%; height:100%; }
+.bookdbimgbox:not(:first-child) {border:1px solid #e5e5e5}
+.bookdbimgbox {width:100%; height:50%; overflow: hidden;}
+.bookdbimgbox img {width:100%; height:100%;  transition: 0.4s}
+.bookdb:hover .bookdbimgbox img {transform: scale(1.03)}
+.bookdbimgbox > h3 {color:#666; font-size:22px; margin:10px 0 0 0;}
+.bookdbimgbox > span {color:#939db8; font-size:14px; font-weight: bold;}
+.bookdbtextbox {width:100%; height:50%; display: flex; justify-content: center; flex-wrap: wrap; align-content: flex-start; padding:0 0px;}
+.bookdbtextbox img {width:100%; height:100%;}
+.bookdbtextbox > span {color:#4a4a4a; font-weight: bold; font-size:14px; margin:15px 0 15px 0; width:90%;}
+.bookdbtextbox > p {color:#8c8cbf; font-size:12px; margin:0px 0 0 0; width:90%;}
+
+#img2 { width:96px; height:31px; margin:20px 0 0 0;}
+#img3 { width:96px; height:31px; margin:20px 0 0 0;}
+
